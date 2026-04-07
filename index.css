@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Great+Vibes&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Italiana&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background: #080808;
+  display: flex;
+  flex-direction: column;
+}
+:root {
+  --primary-clr: #080808;
+  --nav-bar: #1b1b1b;
+  --second-clr: #ffffff;
+  --text-color: #9c9c9c;
+  --main-font: "IBM Plex Mono", monospace;
+}
+.nav {
+  background-color: var(--nav-bar);
+  margin: 0 85px 0 85px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.nav .links {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: clamp(0.0625rem, 3vw, 2.5rem);
+  list-style-type: none;
+  padding: 24px;
+  justify-content: space-around;
+}
+.nav .links li a {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--text-color);
+  font-family: var(--main-font);
+  text-transform: capitalize;
+  white-space: nowrap;
+  font-size: clamp(0.675rem, 2vw, 1rem);
+}
+.nav .links svg {
+  fill: var(--text-color);
+  width: 30px;
+  height: 30px;
+}
+
+/*____________________________________________________________
+Hero Section
+______________________________________________________________*/
+.hero {
+  display: flex;
+  justify-content: center;
+  gap: clamp(1rem, 2vw, 5rem);
+  padding: 100px;
+}
+.hero img {
+  display: block;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+}
+.hero .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.hero h1 {
+  color: var(--second-clr);
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+  font-size: 44px;
+  font-weight: 800;
+}
+.hero p {
+  display: block;
+  width: 350px;
+  color: var(--text-color);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: clamp(0.5rem, 2vw, 0.8rem);
+}
+.hero button {
+  background-color: #3f8e00;
+  color: var(--second-clr);
+  font-family: var(--main-font);
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 4px;
+  white-space: nowrap;
+  height: 60px;
+  width: 344px;
+  box-shadow: #3f8e00 0px 8px 30px;
+  border-color: #62ba1b;
+}
+/*____________________________________________________________
+Section
+______________________________________________________________*/
+.container {
+}
+.container .section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container h2 {
+  font-family: var(--main-font);
+  color: var(--second-clr);
+  font-weight: 200;
+  font-size: clamp(0.5rem, 2vw, 0.8rem);
+  padding: 20px;
+}
+.container .section p {
+  width: 160px;
+  height: 60px;
+  font-family: var(--main-font);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px;
+  border-color: var(--nav-bar);
+  border-radius: 10px;
+  border-style: solid;
+}
+/*____________________________________________________________
+Mobile Nav
+______________________________________________________________*/
+
+@media (max-width: 1000px) {
+  .nav .links li {
+    display: none;
+  }
+  .nav .links svg {
+    justify-content: left;
+  }
+}
