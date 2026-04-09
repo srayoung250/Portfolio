@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Curriculum Vitae</title>
+
+    <link rel="stylesheet" href="/CV Styles/contact.css" />
+  </head>
+  <body>
+    <header>
+      <p class="logo"><a href="CV HTML.html">SY</a></p>
+      <nav>
+        <ul class="side_bar">
+          <li onclick="hideSidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30px"
+                viewBox="0 -960 960 960"
+                width="30px"
+                fill="#e3e3e3"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                /></svg
+            ></a>
+          </li>
+          <li><a href="/aboutme.html">About Me</a></li>
+          <li><a href="/skills.html">Skills</a></li>
+          <li>
+            <a href="https://github.com/srayoung250?tab=repositories"
+              >Projects</a
+            >
+          </li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav_links">
+          <li class="hideonmobile"><a href="/aboutme.html">About Me</a></li>
+          <li class="hideonmobile"><a href="/skills.html">Skills</a></li>
+          <li class="hideonmobile">
+            <a href="https://github.com/srayoung250?tab=repositories"
+              >Projects</a
+            >
+          </li>
+          <li class="hideonmobile"><a href="/contact.html">Contact</a></li>
+          <li class="menubutton" onclick="showSidebar()">
+            <a href="#"></a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <ul id="ci" class="contact_info">
+      <li>
+        <a href="mailto:srayoung250@gmail.com">Email: srayoung250@gmail.com</a>
+      </li>
+      <li><a href="tel:509-727-7838">Mobile: (509) 727-7838</a></li>
+      <li>
+        <a href="https://www.linkedin.com/in/sheldon-young-1b61693a6/"
+          >LinkedIn Profile</a
+        >
+      </li>
+    </ul>
+    <footer>
+      <p>Copyright &copy; 2024 Sheldon Young</p>
+    </footer>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".side_bar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".side_bar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
