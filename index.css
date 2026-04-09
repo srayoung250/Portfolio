@@ -24,6 +24,7 @@
   --transition: 1s;
   --nav-links: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
   --border-nav: 0;
+  --box-shadow: 0px 0px 100px 1px #ff0099;
 }
 /* Theme 3: Modern*/
 [data-theme="modern"] {
@@ -43,6 +44,7 @@
   --transition: 0.5s;
   --nav-links: 0;
   --border-nav: 1.5rem;
+  --box-shadow: 0px 0px 100px 1px rgba(0, 0, 0, 0.5);
 }
 
 /* Theme 3: Forest (Nature) */
@@ -98,6 +100,17 @@ body {
   align-items: center;
   justify-content: space-around;
   z-index: 2;
+}
+.nav::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: var(--box-shadow);
+  pointer-events: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  z-index: -1;
+  pointer-events: none;
 }
 .nav .links {
   display: flex;
