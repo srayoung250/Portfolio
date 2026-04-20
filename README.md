@@ -7,7 +7,7 @@ This project is a fully responsive personal landing page built from scratch. I t
 🛠️ Tech Stack
 HTML5: Semantic structure for SEO and accessibility.
 CSS3: Custom styling, Flexbox/Grid layouts, and responsive design.
-JavaScript (Optional): Interactive elements and smooth scrolling.
+JavaScriptmfor listiening events for the nav-bar & setTheme for the differnt themes
 Figma: The original source for design specifications and assets. 
 
 ✨ Key Features
@@ -21,4 +21,4 @@ Analysis: I started by auditing the Personal Portfolio Template to identify reus
 Development: Built the "Mobile-First" structure using semantic HTML.
 Refinement: Fine-tuned spacing and animations to match the professional feel of the original design.
 
-Will be added later Customization: Dark mode light mode and modern 💪
+Will be added later Nav-links to different landing pages.
